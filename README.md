@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/andiliewantorosusanto/ineedabudget/badge)](https://www.codefactor.io/repository/github/andiliewantorosusanto/ineedabudget)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
