@@ -1,50 +1,40 @@
 import './App.css';
+import React, { useRef, useState } from 'react';
+import DesktopNav from './DesktopNav';
+import MobileNav from './MobileNav';
+import TodoList from './TodoList';
 
 function App() {
+  const [todos] = useState([{id: 1, name: 'Todo 1', complete: false}]);
+  const todoNameRef = useRef();
+
+  function setTodos(todos) {
+    this.setState({ todos });
+  }
+
+  function handleAddTodo(e) {
+    e.preventDefault();
+    const newTodo = {
+      id: todos.length + 1,
+      name: todoNameRef.current.value,
+      complete: false
+    };
+    setTodos([...todos, newTodo]);
+    todoNameRef.current.value = '';
+  }
+
   return (
     <div className="relative min-h-screen md:flex">
+      <MobileNav />
+      <DesktopNav />
 
-      <div className='bg-blue-800 text-blue-100 flex justify-between md:hidden'>
-        <a href="www.google.com" className='block p-4 text-white font-bold'>
-          Better Dev
-        </a>
-
-        <button className='mobile-menu-button p-4 focus:outline-none focus:bg-blue-700'>
-          <svg className='h-5 w-5' 
-            xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-
-      <div className="sidebar bg-blue-800 text-blue-100 w-64 space-y-6 px-2 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-        <a href="www.google.com" className="text-white flex items-center space-x-2 px-4">
-          <svg className="w-8 h-8"
-            xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-          </svg>
-          <span className="text-2xl font-extrabold">
-            Better Dev
-          </span>
-        </a>
-
-        <nav>
-          <a href="www.google.com" className="block py-2.5 px-4 rounded hover:bg-blue-700">
-            Home
-          </a>
-          <a href="www.google.com" className="block py-2.5 px-4 rounded hover:bg-blue-700">
-            About
-          </a>
-          <a href="www.google.com" className="block py-2.5 px-4 rounded hover:bg-blue-700">
-            Features
-          </a>
-          <a href="www.google.com" className="block py-2.5 px-4 rounded hover:bg-blue-700">
-            Pricing
-          </a>
-        </nav>
-      </div>
       <div className="flex-1 p-10 text-2xl font-bold">
-        Content goes here
+        <input type="text" className="w-full p-2" placeholder="Add a todo" />
+        <input type="submit" className="w-full p-2" value="Add" onClick={handleAddTodo}/>
+        <TodoList todos={todos} />
+        <div>
+          {todos.length} Left To Do
+        </div>
       </div>
     </div>
   );
