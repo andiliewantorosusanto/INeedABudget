@@ -20,7 +20,7 @@ export default function Widget() {
         <div className='flex flex-col justify-between'>
             <div className='text-green-500 text-sm'>
                 <KeyboardArrowUpIcon />
-                30%
+                20%
             </div>
             <LocalGroceryStore className='p-1 text-blue-300 bg-blue-600 rounded self-end' />
         </div>
