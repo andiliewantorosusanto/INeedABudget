@@ -1,4 +1,5 @@
 import Widget from "../../components/widget/Widget";
+import React from 'react'
 
 export default function Home() {
   return (
