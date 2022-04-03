@@ -1,14 +1,14 @@
-import React from 'react';
 import {
-  Route,
   BrowserRouter,
+  Route,
   Routes
 } from "react-router-dom";
 
-import DesktopNav from './components/desktopnav/DesktopNav';
-import MobileNav from './components/mobilenav/MobileNav';
 import Category from './pages/category/Category';
+import DesktopNav from './components/desktopnav/DesktopNav';
 import Home from './pages/home/Home';
+import MobileNav from './components/mobilenav/MobileNav';
+import React from 'react';
 
 function App() {
 
