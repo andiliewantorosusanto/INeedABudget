@@ -53,7 +53,7 @@ export default function Chart() {
       <h3 className='mb-2'>
         Sales Analytics
       </h3>
-      <ResponsiveContainer>
+      <ResponsiveContainer width='100%' height={300}>
         <LineChart data={data}>
           <XAxis dataKey='name' stroke='#5550bd'/>
           <Line type='monotone' dataKey='pv' stroke='#5550bd' strokeWidth={2} />

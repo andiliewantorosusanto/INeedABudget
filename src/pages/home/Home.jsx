@@ -1,6 +1,5 @@
 import Chart from '../../components/chart/Chart';
 import React from 'react'
-import WalletAddWidget from '../../components/walletaddwidget/WalletAddWidget';
 import Widget from "../../components/widget/Widget";
 
 export default function Home() {
