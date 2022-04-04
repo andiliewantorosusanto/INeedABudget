@@ -1,4 +1,6 @@
+import Chart from '../../components/chart/Chart';
 import React from 'react'
+import WalletAddWidget from '../../components/walletaddwidget/WalletAddWidget';
 import Widget from "../../components/widget/Widget";
 
 export default function Home() {
@@ -16,25 +18,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex mt-4 space-x-4">
+        <div className="flex py-4 space-x-4 overflow-x-hidden w-full">
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
           <Widget />
           <Widget />
           <Widget />
           <Widget />
         </div>
         
-        <div className="flex mt-4">
-          <div className="flex-1">
-            <div>
-              Feature
-            </div>
-            <div>
-              Some graph
-            </div>
-          </div>
-          <div className="flex-1">
-            Something
-          </div>
+        <div className="flex py-4">
+          <Chart />
         </div>
     </div>
   )

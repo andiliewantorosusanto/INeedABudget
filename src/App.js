@@ -17,10 +17,8 @@ function App() {
       <div className="relative min-h-screen md:flex">
         <MobileNav />
         <DesktopNav />
-        {
-          //TODO: Add routes
-        }
-        <div className="flex-1 p-10 text-2xl font-bold bg-gray-100">
+        
+        <div className="flex-1 p-10 text-2xl font-bold bg-gray-100 w-[85%]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/category" element={<Category />} />
