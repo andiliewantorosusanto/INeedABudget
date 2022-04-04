@@ -18,7 +18,7 @@ function App() {
         <MobileNav />
         <DesktopNav />
         
-        <div className="flex-1 p-10 text-2xl font-bold bg-gray-100 w-[85%]">
+        <div className="flex-1 p-10 text-md font-bold bg-gray-100 w-[85%]">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/category" element={<Category />} />

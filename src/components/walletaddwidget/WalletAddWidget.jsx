@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function WalletAddWidget() {
   return (
-    <div className="p-4 rounded flex-1 shadow-md flex justify-between">
+    <div className="p-4 rounded flex-1 shadow-sm flex justify-between">
         <div className='flex flex-col justify-between space-y-6'>
             <div className='text-sm font-extrabold text-black'>
                 Account
