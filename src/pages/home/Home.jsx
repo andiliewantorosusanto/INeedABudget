@@ -14,19 +14,21 @@ export default function Home() {
             Hello Andy! (Or Stranger?)
           </div>
           <div className="text-lg">
-            This website is still under construction :)
+            This website is still under construction :) - yo mama
           </div>
         </div>
 
-        <ScrollContainer className="scroll-container flex flex-[1_1_25%] py-4 space-x-4 overflow-x-hidden w-full ">
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
+        <ScrollContainer>
+          <div className="scroll-container flex flex-[1_1_25%] py-4 space-x-4 overflow-x-hidden w-full ">
+            <Widget />
+            <Widget />
+            <Widget />
+            <Widget />
+            <Widget />
+            <Widget />
+            <Widget />
+            <Widget />
+          </div>
         </ScrollContainer>
         
         <div className="flex py-4">
