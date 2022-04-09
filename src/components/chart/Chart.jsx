@@ -49,7 +49,7 @@ export default function Chart() {
   ];
   
   return (
-    <div className='flex-1 shadow-sm bg-white'>
+    <div className='flex py-4 flex-1 shadow-sm bg-white'>
       <h3 className='p-4 font-extrabold text-2xl text-black'>
         Wallet Growth
       </h3>
