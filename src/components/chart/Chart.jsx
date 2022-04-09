@@ -11,7 +11,7 @@ export default function Chart() {
       accountTotal: Math.random()*1000,
     },
     {
-      name: 'Febuary',
+      name: 'February',
       spending: Math.random()*1000,
       earning: Math.random()*1000,
       accountTotal: Math.random()*1000,

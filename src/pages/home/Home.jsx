@@ -1,5 +1,6 @@
 import Chart from '../../components/chart/Chart';
 import React from 'react'
+import ScrollContainer from 'react-indiana-drag-scroll';
 import Widget from "../../components/widget/Widget";
 
 export default function Home() {
@@ -17,12 +18,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex py-4 space-x-4 overflow-x-hidden w-full">
+        <ScrollContainer className="scroll-container flex flex-[1_1_25%] py-4 space-x-4 overflow-x-hidden w-full ">
           <Widget />
           <Widget />
           <Widget />
           <Widget />
-        </div>
+          <Widget />
+          <Widget />
+          <Widget />
+          <Widget />
+        </ScrollContainer>
         
         <div className="flex py-4">
           <Chart />
