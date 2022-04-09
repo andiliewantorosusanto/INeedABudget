@@ -1,7 +1,7 @@
 import Chart from '../../components/chart/Chart';
 import React from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll';
-import Widget from "../../components/widget/Widget";
+import Wallet from '../../components/wallet/Wallet';
 
 export default function Home() {
   return (
@@ -20,14 +20,14 @@ export default function Home() {
 
         <ScrollContainer>
           <div className="scroll-container flex flex-[1_1_25%] py-4 space-x-4 overflow-x-hidden w-full ">
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
-            <Widget />
+            <Wallet />
+            <Wallet />
+            <Wallet />
+            <Wallet />
+            <Wallet />
+            <Wallet />
+            <Wallet />
+            <Wallet />
           </div>
         </ScrollContainer>
         
