@@ -1,4 +1,4 @@
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis } from 'recharts'
+import { Area, AreaChart, CartesianGrid, Tooltip, XAxis } from 'recharts'
 
 import React from 'react'
 
@@ -49,7 +49,6 @@ export default function Chart() {
   ];
   
   return (
-    <ResponsiveContainer width="100%" height={300}>
       <AreaChart
         width={500}
         height={300}
@@ -68,6 +67,5 @@ export default function Chart() {
         <Area type="monotone" dataKey="earning" stroke="#37E3AD" fill="#37E3AD"  />
         <Area type="monotone" dataKey="accountTotal" stroke="#3695E7" fill="#3695E7" />
       </AreaChart>
-    </ResponsiveContainer>
   )
 }
