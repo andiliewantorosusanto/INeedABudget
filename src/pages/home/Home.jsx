@@ -1,4 +1,4 @@
-import Chart from '../../components/chart/Chart';
+import GrowthChart from '../../components/growthchart/GrowthChart';
 import Header from '../../components/header/Header';
 import React from 'react'
 import ScrollWallet from '../../components/scrollwallet/ScrollWallet';
@@ -8,7 +8,7 @@ export default function Home() {
     <div className="home text-gray-600 ">
       <Header/>
       <ScrollWallet/>
-      <Chart />
+      <GrowthChart />
     </div>
   )
 }
