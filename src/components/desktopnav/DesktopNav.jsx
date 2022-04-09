@@ -21,24 +21,23 @@ return (
                 Dashboard
             </span>
             <a href="/" className="py-2.5 px-4 rounded hover:bg-blue-700 flex items-center">
-                <Home className='mr-1'/>Overview
+                <Home/> <span className='ml-1'>Overview </span>
             </a>
             <a href="/about" className="py-2.5 px-4 rounded hover:bg-blue-700 flex items-center">
-                <Paid className='mr-1'/> Trasactions
+                <Paid /> <span className='ml-1'>Trasactions</span>
             </a>
             <a href="/features" className="py-2.5 px-4 rounded hover:bg-blue-700 flex items-center">
-                <MoneyOff className='mr-1'/> Debts
+                <MoneyOff /> <span className='ml-1'>Debts</span>
             </a>
             <span className='font-extrabold'>
                 Settings
             </span>
             <a href="/pricing" className="py-2.5 px-4 rounded hover:bg-blue-700 flex items-center">
-                <Category className='mr-1'/> Categories
+                <Category /> <span className='ml-1'>Categories</span>
             </a>
             <a href="/pricing" className="py-2.5 px-4 rounded hover:bg-blue-700 flex items-center">
-                <AccountBalance className='mr-1'/> Budgets
+                <AccountBalance /> <span className='ml-1'>Budgets</span>
             </a>
         </nav>
     </div>
-  )
-}
+)}

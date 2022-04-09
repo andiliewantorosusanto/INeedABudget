@@ -22,7 +22,9 @@ export default function Widget() {
                 <KeyboardArrowUpIcon />
                 20%
             </div>
-            <LocalGroceryStore className='p-1 text-blue-300 bg-blue-600 rounded self-end' />
+            <div className='p-1 text-blue-300 bg-blue-600 rounded self-end'>
+                <LocalGroceryStore  />
+            </div>
         </div>
     </div>
   )
