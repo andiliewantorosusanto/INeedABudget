@@ -50,7 +50,7 @@ export default function Chart() {
   
   return (
       <AreaChart
-        width={500}
+        width="100%"
         height={300}
         data={data}
         margin={{
